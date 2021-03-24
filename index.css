@@ -25,9 +25,9 @@ li a {
     color: hsl(228, 39%, 23%);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
     color: hsl(228, 39%, 23%);
-    font-size: 3em;
+    font-size: 2.8em;
     line-height: 1.5;
     margin-bottom: 20px;
 }
@@ -35,6 +35,8 @@ h1, h2, h3, h4 {
 p {
     color: hsl(227, 12%, 61%);
     margin-bottom: 20px;
+    width: 58%;
+    line-height: 1.8;
 
 }
 
@@ -68,6 +70,8 @@ p {
     color: #fff;
     text-transform: capitalize;    
     letter-spacing: 1.2px;
+    font-family: 'Be Vietnam', sans-serif;
+
 }
 
 /* header */
@@ -105,19 +109,77 @@ p {
     padding: 10px;
 }
 
-.showcase-text p {
+/* .showcase-text p {
     width: 60%;
     line-height: 1.8;
-}
+} */
 
 .showcase-text .btn {
-    width: 30%;
-    height: 45px;
+    width: 40%;
+    height: 50px;
 }
 
 .showcase img {
     width: 100%;
     height: auto;
+}
+
+/* section 2 */
+
+.sec-2 {
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    background-image: url('./images/bg-tablet-pattern.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: -300px;
+    background-position-y: 200px;
+
+}
+
+.sec-2-lt {
+    width: 45%;
+    padding: 25px;
+    margin: 0 200px;
+}
+
+.sec-2-lt p {
+    width: 90%;
+}
+
+
+.sec-2-rt {
+    width: 60%;
+}
+
+.sec-2-rt button{
+    margin-right: 30px;
+}
+
+.sec-2-rt .card {
+    width: 78%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 12pt;
+    padding: 10px;
+}
+
+.card-desc {
+    width: 100%;
+}
+
+.card-desc .top {
+    color: hsl(228, 39%, 23%);
+    font-weight: bold;
+}
+
+.card-desc p {
+    width: 100%;
 }
 
 
