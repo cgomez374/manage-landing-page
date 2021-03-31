@@ -17,7 +17,7 @@ li {
     list-style: none;
 }
 
-li a {
+a {
     cursor: pointer;
     text-decoration: none;
     font-family: 'Be Vietnam', sans-serif;
@@ -78,7 +78,8 @@ p {
     text-transform: capitalize;    
     letter-spacing: 1.2px;
     font-family: 'Be Vietnam', sans-serif;
-
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .title-sm {
@@ -191,28 +192,115 @@ p {
 
 /* section 3 */
 .sec-3 {
-    background-color: red;
     width: 100%;
-    height: 600px;
+    height: 800px;
     text-align: center;
+    overflow: hidden;
+    margin-bottom: 100px;
+}
+
+.testomonials {
+    width: 150%;
 }
 
 .person {
-    background-color: rgb(32, 26, 26);
-    width: 30%;
-    padding: 15px;
-    transition: transform 2s ease-in-out;
+    width: 20%;
+    height: 400px;
+    margin: auto 0;
+    transition: transform 1s ease;
     position: relative;
-
 }
 
 .sec-3 img {
     margin-bottom: 20px;
 }
 
-.move {
-    transition: transform 3s ease-in-out;
-    /* transform: translateX(500px); */
+.person .text {
+    width: 85%;
+}
+
+.prev {
+    cursor: pointer;
+}
+
+.next {
+    cursor: pointer;
+}
+
+/* section 4 */
+
+.sec-4 {
+    background-color: hsl(12, 88%, 59%);
+    width: 100%;
+    padding: 50px;
+}
+
+.sec-4 h3{
+    color: #fff;
+}
+
+.sec-4 .btn{
+    background-color: #fff;
+    color: hsl(12, 88%, 59%);
+}
+
+/* footer */
+
+.footer {
+    background-color: #000;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer .beg{
+    width: 15%;
+    height: 100px;
+}
+
+.beg ul li {
+    margin: 5px;
+}
+
+.footer .mid {
+    color: #fff;
+    width: 15%;
+    height: 120px;
+}
+
+.mid ul li {
+    margin: 10px;
+}
+
+.mid a {
+    color: #fff;
+}
+
+.end{
+    width: 30%;
+    height: 180px;
+}
+
+.end form {
+    width: 80%;
+}
+
+.end form input {
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.end p {
+    color: #fff;
+}
+
+.end .card {
+    margin: auto 0;
 }
 
 
