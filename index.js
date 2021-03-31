@@ -1,18 +1,16 @@
 //THIS FILE IS MAINLY TO CONTROL THE SLIDER
 
-
-
 //GRAB ELEMENTS FROM DOC
 const persons = document.querySelectorAll('.person');
 const slideContainer = document.querySelector('.testomonials');
 const prev = document.querySelector('.prev');
 const next = document.querySelector('.next');
-const screenWidth = window.screen.width;
+let screenWidth = window.screen.width;
 
 
 //MOVE ALL IMAGES EITHER TO THE RIGHT OR LEFT DEPENDING ON ARROW CLICKED
-function handleClick(direction){
-    if(screenWidth >= 900){
+function movePeople(direction){
+    if(screenWidth >= 920){
         if(direction > 0){
                 persons.forEach((person) => {
                     person.style.transform = `translate(-${screenWidth / 5.7}px)`;
@@ -79,8 +77,22 @@ function smallScreenSlider(direction){
 
 
 //EVENT LISTENERS
-next.addEventListener('click', () => handleClick(1));
-prev.addEventListener('click', () => handleClick(-1));
+next.addEventListener('click', () => movePeople(1));
+prev.addEventListener('click', () => movePeople(-1));
+
+
+//IF THE SCREEN RESIZES THEN THE CARDS WILL BE MOVED TO THE APPROPRIATE POSITIONS
+window.addEventListener('resize', () => {
+    //SCREEN GOT SMALLER
+    if(screenWidth > window.screen.width){
+        screenWidth = window.screen.width;
+        smallScreenSlider(1);
+    }
+    else if(screenWidth < window.screen.width){
+        screenWidth = window.screen.width;
+        movePeople(-1);
+    }
+})
 
 
 
